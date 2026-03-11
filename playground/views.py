@@ -1,13 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse, render
-
-from store.models import Product
+from django.db import connection
+from store.models import Product, Order, OrderItem, Customer, Collection
 
 
 def say_hello(request):
-    query_set = Product.objects.all()
+    with connection.cursor() as cursor:
+        cursor.execute()
 
-    for product in query_set:
-        print(product)
-#    queryset = Product.objects.filter(unit_price__gt=20)
-    return render(request, 'hello.html', {'name': 'Nuru', 'products': queryset})
+    return render(request, 'hello.html', {'name': 'Nuru', 'result': list(queryset)})
