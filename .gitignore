@@ -1,0 +1,52 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+static/
+*.db
+
+# Virtual environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+*.env
+
+# Python
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# pytest
+.pytest_cache/
+htmlcov/
+
+# mypy
+.mypy_cache/
+
+# celery
+celerybeat-schedule/
+
+# SageMath
+.sage/
+
+# Project specific - add your custom stuff
+/media/
+/static/
