@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0_y4jh(03tp=l5&!$k(l382h1^nh$ij^!36osn_j5dt4_o^tf@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -154,7 +154,7 @@ DJOSER = {
         'user_create': 'core.serializers.UserCreateSerializer',
         'current_user': 'core.serializers.UserSerializer'
     }
-   
+
 }
 
 SIMPLE_JWT = {
