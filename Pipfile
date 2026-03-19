@@ -12,6 +12,10 @@ drf-nested-routers = "*"
 django-filter = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+whitenoise = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
