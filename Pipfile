@@ -18,6 +18,7 @@ whitenoise = "*"
 dj-database-url = "*"
 python-dotenv = "*"
 waitress = "*"
+pillow = "*"
 
 [dev-packages]
 
