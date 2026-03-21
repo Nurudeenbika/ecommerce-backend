@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =  os.environ.get('SECRET_KEY', 'django-insecure-0_y4jh(03tp=l5&!$k(l382h1^nh$ij^!36osn_j5dt4_o^tf@')
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY', 'django-insecure-0_y4jh(03tp=l5&!$k(l382h1^nh$ij^!36osn_j5dt4_o^tf@')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
@@ -92,7 +93,7 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-if os.environ.get('RENDER'):
+if os.environ.get('DATABASE_URL'):
     # Production on Render
     DATABASES = {
         'default': dj_database_url.config(
@@ -103,14 +104,14 @@ if os.environ.get('RENDER'):
     }
 else:
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'storefront',
-        'HOST': 'localhost',
-        'USER': 'root',
-        'PASSWORD': 'password',
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'storefront',
+            'HOST': 'localhost',
+            'USER': 'root',
+            'PASSWORD': 'password',
+        }
     }
-}
 
 
 # Password validation
