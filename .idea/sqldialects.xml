@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/../Django- Resources (1)/Resources/Data/seed.sql" dialect="MySQL" />
-    <file url="file://$USER_HOME$/Downloads/store_customer.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../Django 2- Resources/Resources/Data/seed.sql" dialect="MySQL" />
   </component>
 </project>
